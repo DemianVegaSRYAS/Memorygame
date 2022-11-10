@@ -12,7 +12,6 @@ body {
 h1{
     text-align: center;
     color: #FFF;
-    font-family: "Source Code Pro", Monaco, monospace;
     text-transform: uppercase;
     margin: 2em;
 }
@@ -26,7 +25,7 @@ h1{
 
 .card {
     position: relative;
-    transition: all .4s linear;
+    transition: all 0.3s linear;
     transform-style: preserve-3d;
     margin: 5px;
 }
@@ -59,9 +58,12 @@ h1{
 
 .selected {
     transform: rotateY(180deg);
+    
 }
 
 .match .front {
-    background: #FFF !important;
+    background: url('https://upload.wikimedia.org/wikipedia/en/2/2b/Yugioh_Card_Back.jpg') no-repeat center center / contain;
+    transform: rotateZ(90deg);
+
     border-radius: 10px;
 }

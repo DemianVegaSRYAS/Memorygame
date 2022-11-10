@@ -1,15 +1,22 @@
 const cardsArray = [
-    {'name': 'kuriboh', 'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Kuriboh.jpg?resize=1280%2C1890&quality=80&ssl=1',},
-    {'name': 'MagObs', 'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Mago-Oscuro.jpg?resize=1280%2C1890&quality=80&ssl=1',},
-    {'name': 'DragBlanc', 'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Dragon-Blanco-de-Ojos-Azules.jpg?resize=1280%2C1890&quality=80&ssl=1',},
-    {'name': 'MagaObs', 'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Maga-Oscura.jpg?resize=1280%2C1890&quality=80&ssl=1',},
-    {'name': 'BlusBld', 'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Buster-Blader.jpg?resize=1280%2C1890&quality=80&ssl=1',},
-    {'name': 'DragNegr', 'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Dragon-Negro-de-Ojos-Rojos.jpg?resize=1280%2C1890&quality=80&ssl=1',},
+    {'name': 'kuriboh', 
+    'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Kuriboh.jpg?resize=1280%2C1890&quality=80&ssl=1',},
+    {'name': 'MagObs', 
+    'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Mago-Oscuro.jpg?resize=1280%2C1890&quality=80&ssl=1',},
+    {'name': 'DragBlanc', 
+    'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Dragon-Blanco-de-Ojos-Azules.jpg?resize=1280%2C1890&quality=80&ssl=1',},
+    {'name': 'MagaObs', 
+    'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Maga-Oscura.jpg?resize=1280%2C1890&quality=80&ssl=1',},
+    {'name': 'BlusBld', 
+    'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Buster-Blader.jpg?resize=1280%2C1890&quality=80&ssl=1',},
+    {'name': 'DragNegr', 
+    'img': 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2022/07/Cartas-favoritas-del-creador-de-Yu-Gi-Oh-Dragon-Negro-de-Ojos-Rojos.jpg?resize=1280%2C1890&quality=80&ssl=1',},
     ];
 
 const gameGrid = cardsArray.concat(cardsArray);
+
 gameGrid.sort(()=>{
-    return 1 - Math.random();
+    return 0.3 - Math.random();
 })
 
 const game = document.getElementById('game-board');
@@ -89,7 +96,6 @@ grid.addEventListener('click', (event) => {
                 setTimeout(resetGuesses, delay);
             }
         }
-
         previousTarget = clicked;
     }
 });
