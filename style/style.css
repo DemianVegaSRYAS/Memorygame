@@ -67,3 +67,16 @@ h1{
 
     border-radius: 10px;
 }
+.hero_wrapp{
+    display: flex;
+}
+.refresh{
+    margin: 1em;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    font-size: 4em;
+    font-weight: 900;
+}
